@@ -1,0 +1,7 @@
+<isif condition="${payment.paymentMethod == 'POINTSPAY_FBP'}">
+    <p>${Resource.msg('Flying Blue+', 'pointspay', null)}</p>
+</isif>
+
+<isif condition="${payment.paymentMethod == 'POINTSPAY_EBP'}">
+    <p>${Resource.msg('EuroBonus Checkout', 'pointspay', null)}</p>
+</isif>

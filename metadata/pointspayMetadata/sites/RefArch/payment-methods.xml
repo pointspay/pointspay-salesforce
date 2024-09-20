@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payment-settings xmlns="http://www.demandware.com/xml/impex/paymentsettings/2009-09-15">
+    <payment-method method-id="POINTSPAY_FBP">
+        <name xml:lang="x-default">Flying Blue+</name>
+        <enabled-flag>true</enabled-flag>
+        <processor-id>POINTSPAY</processor-id>
+        <countries>
+            <country country-code="FR"/>
+            <country country-code="NL"/>
+        </countries>
+    </payment-method>
+    <payment-method method-id="POINTSPAY_EBP">
+        <name xml:lang="x-default">EuroBonus Checkout</name>
+        <enabled-flag>true</enabled-flag>
+        <processor-id>POINTSPAY</processor-id>
+        <countries>
+            <country country-code="DK"/>
+            <country country-code="NO"/>
+            <country country-code="SE"/>
+        </countries>
+    </payment-method>
+</payment-settings>
