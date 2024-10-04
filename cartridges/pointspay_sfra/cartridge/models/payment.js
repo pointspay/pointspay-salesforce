@@ -16,7 +16,7 @@ var base = module.superModule;
 function applicablePaymentMethods(paymentMethods) {
     return collections.map(paymentMethods, function (method) {
         let mode = method.getCustom().pointspayEnvironment,
-            shopCode = mode === 'TEST' ? method.getCustom().pointspayTestShopCode : method.getCustom().pointspayLiveShopCode;
+            shopCode = mode.value === 'TEST' ? method.getCustom().pointspayTestShopCode : method.getCustom().pointspayLiveShopCode;
 
         return {
             ID: method.ID,
