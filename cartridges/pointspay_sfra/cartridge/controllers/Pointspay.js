@@ -85,6 +85,7 @@ server.post(
     function (req, res) {
         var OrderMgr = require('dw/order/OrderMgr');
         var URLUtils = require('dw/web/URLUtils');
+        var Logger = require('dw/system/Logger');
         var parameters = req.httpParameterMap;
         var orderNo = parameters.get('order_id').value;
         var orderToken = '';

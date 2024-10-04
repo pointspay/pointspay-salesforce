@@ -28,6 +28,24 @@ To upload the cartridge:
 
 **IMPORTANT:** Make sure to rename `RefArch` folder in the metadata archive to the name of the site you want to import this metadata configuration into
 
+## Setting up certificates and keys
+
+First, generate a new pair of certificates for signing the payment request to the Pointspay API.
+
+```
+openssl req -newkey rsa:8192 -nodes -keyout private-key.pem -x509 -days 1095 -out pointspay-certificate.cer -sha256
+```
+
+Please upload the generated `pointspay-certificate.cer` file as a shop certificate file on the "ON Payment Dashboard" and set the contents of the `private-key.pem` file in the Pointspay payment  method configuration on your Salesforce B2C store.
+
+After that, download the Pointspay certificate from the "ON Payment Dashboard" and extract the public key from it using the following command:
+
+```
+openssl x509 -pubkey -noout -in pointspay-certificate.cer > pointspay-public-key.pem
+```
+
+Finally, set the contents of the `pointspay-public-key.pem` file in the Pointspay payment method configuration on your Salesforce B2C store and save the configuration changes.
+
 ## Integration tests
 
 The cartridge contains integration tests for IPN calls that can be triggered by running
