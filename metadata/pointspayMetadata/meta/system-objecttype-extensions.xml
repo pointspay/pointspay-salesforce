@@ -16,22 +16,9 @@
                     </value-definition>
                 </value-definitions>
             </attribute-definition>
-            <attribute-definition attribute-id="pointspayLiveShopCode">
-                <display-name xml:lang="x-default">Live shop code</display-name>
-                <type>string</type>
-                <mandatory-flag>true</mandatory-flag>
-                <externally-managed-flag>false</externally-managed-flag>
-                <min-length>0</min-length>
-            </attribute-definition>
+        
             <attribute-definition attribute-id="pointspayTestShopCode">
                 <display-name xml:lang="x-default">Test shop code</display-name>
-                <type>string</type>
-                <mandatory-flag>true</mandatory-flag>
-                <externally-managed-flag>false</externally-managed-flag>
-                <min-length>0</min-length>
-            </attribute-definition>
-            <attribute-definition attribute-id="pointspayLiveConsumerKey">
-                <display-name xml:lang="x-default">Live consumer key</display-name>
                 <type>string</type>
                 <mandatory-flag>true</mandatory-flag>
                 <externally-managed-flag>false</externally-managed-flag>
@@ -44,13 +31,6 @@
                 <externally-managed-flag>false</externally-managed-flag>
                 <min-length>0</min-length>
             </attribute-definition>
-            <attribute-definition attribute-id="pointspayLivePrivateKey">
-                <display-name xml:lang="x-default">Live private key</display-name>
-                <type>text</type>
-                <mandatory-flag>true</mandatory-flag>
-                <externally-managed-flag>false</externally-managed-flag>
-                <min-length>0</min-length>
-            </attribute-definition>
             <attribute-definition attribute-id="pointspayTestPrivateKey">
                 <display-name xml:lang="x-default">Test private key</display-name>
                 <type>text</type>
@@ -58,15 +38,36 @@
                 <externally-managed-flag>false</externally-managed-flag>
                 <min-length>0</min-length>
             </attribute-definition>
-            <attribute-definition attribute-id="pointspayLivePublicKey">
-                <display-name xml:lang="x-default">Live Pointspay public key</display-name>
+            <attribute-definition attribute-id="pointspayTestPublicKey">
+                <display-name xml:lang="x-default">Test Pointspay public key</display-name>
                 <type>text</type>
                 <mandatory-flag>true</mandatory-flag>
                 <externally-managed-flag>false</externally-managed-flag>
                 <min-length>0</min-length>
             </attribute-definition>
-            <attribute-definition attribute-id="pointspayTestPublicKey">
-                <display-name xml:lang="x-default">Test Pointspay public key</display-name>
+            <attribute-definition attribute-id="pointspayLiveShopCode">
+                <display-name xml:lang="x-default">Live shop code</display-name>
+                <type>string</type>
+                <mandatory-flag>true</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="pointspayLiveConsumerKey">
+                <display-name xml:lang="x-default">Live consumer key</display-name>
+                <type>string</type>
+                <mandatory-flag>true</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="pointspayLivePrivateKey">
+                <display-name xml:lang="x-default">Live private key</display-name>
+                <type>text</type>
+                <mandatory-flag>true</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="pointspayLivePublicKey">
+                <display-name xml:lang="x-default">Live Pointspay public key</display-name>
                 <type>text</type>
                 <mandatory-flag>true</mandatory-flag>
                 <externally-managed-flag>false</externally-managed-flag>
