@@ -6,7 +6,8 @@ const base = require('base/checkout/billing');
 const pointspayPaymentFlavors = {
     'POINTSPAY': 'Pointspay',
     'POINTSPAY_FBP': 'Flying Blue+',
-    'POINTSPAY_EBP': 'EuroBonus Checkout'
+    'POINTSPAY_EBP': 'EuroBonus Checkout',
+    'POINTSPAY_EGP': 'Etihad GuestPay'
 };
 
 /**

@@ -6,6 +6,10 @@
     <p>${Resource.msg('EuroBonus Checkout', 'pointspay', null)}</p>
 </isif>
 
+<isif condition="${payment.paymentMethod == 'POINTSPAY_EGP'}">
+    <p>${Resource.msg('Etihad GuestPay', 'pointspay', null)}</p>
+</isif>
+
 <isif condition="${payment.paymentMethod == 'POINTSPAY_PP'}">
     <p>${Resource.msg('Pointspay', 'pointspay', null)}</p>
 </isif>

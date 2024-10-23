@@ -256,4 +256,22 @@
             <country country-code="NL"/>
         </countries>
     </payment-method>
+	<payment-method method-id="POINTSPAY_EGP">
+        <name xml:lang="x-default">Etihad GuestPay</name>
+		<enabled-flag>true</enabled-flag>
+		<processor-id>POINTSPAY</processor-id>
+        <countries>
+            <country country-code="AE"/>
+        </countries>
+    </payment-method>	
+	<payment-method method-id="POINTSPAY_EBP">
+        <name xml:lang="x-default">EuroBonus Checkout</name>
+		<enabled-flag>true</enabled-flag>
+		<processor-id>POINTSPAY</processor-id>
+        <countries>
+            <country country-code="DK"/>
+            <country country-code="NO"/>
+            <country country-code="SE"/>
+        </countries>
+ 	</payment-method>
 </payment-settings>
