@@ -256,7 +256,7 @@
             <country country-code="NL"/>
         </countries>
     </payment-method>
-	<payment-method method-id="POINTSPAY_EGP">
+	<payment-method method-id="POINTSPAY_EYGP">
         <name xml:lang="x-default">Etihad GuestPay</name>
 		<enabled-flag>true</enabled-flag>
 		<processor-id>POINTSPAY</processor-id>

@@ -6,7 +6,7 @@
     <p>${Resource.msg('EuroBonus Checkout', 'pointspay', null)}</p>
 </isif>
 
-<isif condition="${payment.paymentMethod == 'POINTSPAY_EGP'}">
+<isif condition="${payment.paymentMethod == 'POINTSPAY_EYGP'}">
     <p>${Resource.msg('Etihad GuestPay', 'pointspay', null)}</p>
 </isif>
 
