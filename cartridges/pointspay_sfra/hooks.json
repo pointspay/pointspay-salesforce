@@ -1,0 +1,12 @@
+{
+    "hooks": [
+      {
+        "name": "app.payment.form.processor.pointspay",
+        "script": "./cartridge/scripts/hooks/payment/processor/pointspay_form_processor"
+      },
+      {
+        "name": "app.payment.processor.pointspay",
+        "script": "./cartridge/scripts/hooks/payment/processor/pointspay"
+      }
+    ]
+  }
