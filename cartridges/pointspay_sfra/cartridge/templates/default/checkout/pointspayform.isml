@@ -1,0 +1,12 @@
+<div class="pointspay-checkout">
+		<form action="${pdict.pointspayUrl}" method="post" id="pointspayform" name="pointspayform">
+			<input type="hidden" name="orderToken" value="${pdict.orderToken}"/>
+			<input type="hidden" name="orderID" value="${pdict.orderID}"/>
+		</form>
+		<script language="javascript">
+			function load(){
+				document.getElementById('pointspayform').submit();
+			}
+			load();
+		</script>
+</div>
