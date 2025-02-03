@@ -1,0 +1,16 @@
+<li class="nav-item" data-method-id="${paymentOption.ID}">
+    <isscript>
+        let classForTab = 'nav-link' + (loopstatus.first ? ' active' : '');
+    </isscript>
+    <isscript>
+        let paymentMethodLogo = 'https://uat-secure.pointspay.com/checkout/user/btn-img-v2?s=' + paymentOption.shopCode;
+    </isscript>
+    <a class="${classForTab}" data-toggle="tab" href="${'#tab-content-' + paymentOption.ID}" role="tab">
+        <img class="pointspay-option"
+            src="${paymentMethodLogo}"
+            height="32"
+            alt="${paymentOption.name}"
+            title="${paymentOption.name}"
+        >
+    </a>
+</li>
