@@ -3,7 +3,7 @@
         let classForTab = 'nav-link' + (loopstatus.first ? ' active' : '');
     </isscript>
     <isscript>
-        let paymentMethodLogo = 'https://uat-secure.pointspay.com/checkout/user/btn-img-v2?s=' + paymentOption.shopCode;
+        let paymentMethodLogo = paymentOption.baseUrl + '/checkout/user/btn-img-v2?s=' + paymentOption.shopCode;
     </isscript>
     <a class="${classForTab}" data-toggle="tab" href="${'#tab-content-' + paymentOption.ID}" role="tab">
         <img class="pointspay-option"

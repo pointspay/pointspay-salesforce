@@ -16,13 +16,15 @@ var base = module.superModule;
 function applicablePaymentMethods(paymentMethods) {
     return collections.map(paymentMethods, function (method) {
         let mode = method.getCustom().pointspayEnvironment,
-            shopCode = mode.value === 'TEST' ? method.getCustom().pointspayTestShopCode : method.getCustom().pointspayLiveShopCode;
+            shopCode = mode.value === 'TEST' ? method.getCustom().pointspayTestShopCode : method.getCustom().pointspayLiveShopCode,
+            baseUrl = mode.value === 'TEST' ? 'https://uat-secure.pointspay.com' : 'https://secure.pointspay.com';
 
         return {
             ID: method.ID,
             name: method.name,
             description: method.description,
             mode: mode,
+            baseUrl: baseUrl,
             shopCode: shopCode
         };
     });
